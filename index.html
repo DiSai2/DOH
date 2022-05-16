@@ -10,13 +10,15 @@
 
     <title>「天堂之門」網站</title>
     <style type="text/css">
-      .item:first-letter{
-        font-size:50px;
-        float:left;
-
-      }
-      .item {
+      .txt{
         background-color: #ccc;
+        padding: 20px;
+      }
+
+      @media screen and (min-width: 768px){
+        .txt-block{
+          margin-top:-100px;
+        }
       }
     </style>
   </head>
@@ -25,21 +27,26 @@
 
 
     <div class="container">
-      <div class="row justify-content-around">
-        <div class="col-12 col-md-3 mb-3 order-md-3">
-          <div class="item h-100 ">1. a Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio unde minus beatae non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae enim et accusantium distinctio reiciendis optio incidunt tenetur, quasi impedit nemo!
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="item">
+            <img src="https://picsum.photos/300/200?random=3" class="img-fluid">
+            <h3>我是Rock</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto sequi consequuntur, consectetur soluta doloribus officiis velit atque maiores, eligendi veniam!</p>
           </div>
         </div>
-        <div class="col-12 col-md-3 mb-3 order-md-4">
-          <div class="item h-100 ">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, em ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis asperiores ipsam doloremque, facilis aspernatur voluptatibus?
+        <div class="col-12 col-md-4">
+          <div class="item">
+            <img src="https://picsum.photos/300/200?random=3" class="w-100">
+            <h3>我是Rock</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto sequi consequuntur, consectetur soluta doloribus officiis velit atque maiores, eligendi veniam!</p>
           </div>
         </div>
-        <div class="col-12 col-md-3 mb-3 order-md-1">
-          <div class="item h-100 ">3. Lorem ipsum dolor sit amet, consectetur adipisicing el Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum iste doloremque quod? it.
-          </div>
-        </div>
-        <div class="col-12 col-md-3 mb-3 order-md-2">
-          <div class="item h-100 ">4. Lorem ipsu Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo optio mollitia nesciunt quod est, dolore incidunt, iste laudantium laborum voluptate.  m.
+        <div class="col-12 col-md-4">
+          <div class="item">
+            <img src="https://picsum.photos/300/200?random=3" alt="">
+            <h3>我是Rock</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto sequi consequuntur, consectetur soluta doloribus officiis velit atque maiores, eligendi veniam!</p>
           </div>
         </div>
       </div>
