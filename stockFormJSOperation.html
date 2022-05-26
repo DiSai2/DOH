@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS by CDNS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <title>JS表格操作</title>
+    <style type="text/css">
+
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient bg-opacity-10 mb-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DOH</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">首頁</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">JS小程式</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">部落格</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">投資筆記</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mx-3">
+        <li class="breadcrumb-item active" aria-current="page">首頁</li>
+        <!-- <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Library</li> -->
+      </ol>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-12 mx-auto" id="0050-台灣50">
+          <h4><b>0050-台灣50</b></h4>
+          <table class="table table-sm table-striped text-center mb-0">
+
+            <thead class="table-info">
+              <tr class="">
+                <th scope="col">日期</th>
+                <th scope="col">買賣股數(股)</th>
+                <th scope="col">買賣金額(元)</th>
+                <th scope="col">手續費(元)</th>
+                <th scope="col">交易成本(元)</th>
+                <th scope="col">除息成本(元)</th>
+              </tr>
+            </thead>
+
+            <tbody class="table-group-divider">
+              <tr class="">
+                <th scope="row">2015/10/27</th>
+                <td>200</td>
+                <td>12880</td>
+                <td>20</td>
+                <td>64.50</td>
+                <td>45.15</td>
+              </tr>
+              <tr>
+                <th scope="row">2021/05/11</th>
+                <td>100</td>
+                <td>13400</td>
+                <td>20</td>
+                <td>134.20</td>
+                <td>130.65</td>
+              </tr>
+              <tr>
+                <th scope="row">2021/07/20</th>
+                <td colspan="1">100</td>
+                <td>13740</td>
+                <td>20</td>
+                <td>137.60</td>
+                <td>134.05</td>
+              </tr>
+              <tr>
+                <th scope="row">2022/01/25</th>
+                <td>100</td>
+                <td>14200</td>
+                <td>20</td>
+                <td>142.20</td>
+                <td>142.20</td>
+              </tr>
+            </tbody>
+
+            <tfoot class="table-warning">
+              <tr class="">
+                <th scope="row">總計</th>
+                <td colspan="1">Larry the Bird</td>
+                <td>@twitter</td>
+                <td colspan="1">Larry the Bird</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+              </tr>
+            </tfoot>
+          </table>
+          <table class="table table-group-divider text-center mt-0">
+
+            <thead>
+              <th scope="col">今日日期</th>
+              <th scope="col">今日股價(元)</th>
+              <th scope="col">市價(元)</th>
+              <th scope="col">價差(元)</th>
+              <th scope="col">損益(%)</th>
+              <th scope="col">年化報酬(%)</th>
+            </thead>
+
+            <tbody>
+              <td>2022/05/26</td>
+              <td>124.65</td>
+              <td>375387</td>
+              <td>23567</td>
+              <td>13.56%</td>
+              <td>8.65%</td>
+            </tbody>
+
+          </table>
+        </div>
+        <div class="col-12 col-lg-12 mx-auto" id="006208-富邦台50">
+          <h4><b>006208-富邦台50</b></h4>
+          <table class="table table-sm table-striped text-center mb-0">
+
+            <thead class="table-info">
+              <tr class="">
+                <th scope="col">日期</th>
+                <th scope="col">買賣股數(股)</th>
+                <th scope="col">買賣金額(元)</th>
+                <th scope="col">手續費(元)</th>
+                <th scope="col">交易成本(元)</th>
+                <th scope="col">除息成本(元)</th>
+              </tr>
+            </thead>
+
+            <tbody class="table-group-divider">
+              <tr class="">
+                <th scope="row">2020/01/30</th>
+                <td>249</td>
+                <td>12975</td>
+                <td>1</td>
+                <td>52.11</td>
+                <td>48.54</td>
+              </tr>
+              <tr>
+                <th scope="row">2020/05/26</th>
+                <td>268</td>
+                <td>12969</td>
+                <td>1</td>
+                <td>48.39</td>
+                <td>44.82</td>
+              </tr>
+              <tr>
+                <th scope="row">2020/10/26</th>
+                <td colspan="1">214</td>
+                <td>12988</td>
+                <td>1</td>
+                <td>60.69</td>
+                <td>57.60</td>
+              </tr>
+              <tr>
+                <th scope="row">2021/03/26</th>
+                <td>168</td>
+                <td>12939</td>
+                <td>1</td>
+                <td>77.03</td>
+                <td>75.07</td>
+              </tr>
+            </tbody>
+
+            <tfoot class="table-warning">
+              <tr class="">
+                <th scope="row">總計</th>
+                <td colspan="1">Larry the Bird</td>
+                <td>@twitter</td>
+                <td colspan="1">Larry the Bird</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+              </tr>
+            </tfoot>
+          </table>
+          <table class="table table-group-divider text-center mt-0">
+
+            <thead>
+              <th scope="col">今日日期</th>
+              <th scope="col">今日股價(元)</th>
+              <th scope="col">市價(元)</th>
+              <th scope="col">價差(元)</th>
+              <th scope="col">損益(%)</th>
+              <th scope="col">年化報酬(%)</th>
+            </thead>
+
+            <tbody>
+              <td>2022/05/26</td>
+              <td>124.65</td>
+              <td>375387</td>
+              <td>23567</td>
+              <td>13.56%</td>
+              <td>8.65%</td>
+            </tbody>
+
+          </table>
+        </div>
+        <div class="col-12 col-lg-6 mx-auto" id="投資損益表">
+          <h4><b>投資損益表</b></h4>
+          <table class="table table-sm table-striped">
+            <thead class="table-info">
+              <tr class="">
+                <th scope="col">投資標的</th>
+                <th scope="col">資金比重(%)</th>
+                <th scope="col">投資金額(元)</th>
+                <th scope="col">損益(%)</th>
+                <th scope="col">年化報酬率(%)</th>
+                <th scope="col">市值比重(%)</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr class="">
+                <th scope="row">富邦台50</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">富邦美債20年</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">富邦美債1-3</th>
+                <td colspan="1">Larry the Bird</td>
+                <td>@twitter</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>jjisjisj</td>
+              </tr>
+              <tr>
+                <th scope="row">富邦台50</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+            </tbody>
+            <tfoot class="table-warning table-group-divider">
+              <tr class="">
+                <th scope="row">總計</th>
+                <td colspan="1">Larry the Bird</td>
+                <td>@twitter</td>
+                <td colspan="1">Larry the Bird</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="col-12 col-lg-6 mx-auto" id="現金股利表">
+          <h4><b>現金股利表</b></h4>
+          <table class="table table-sm table-striped">
+            <thead class="table-info">
+              <tr class="">
+                <th scope="col">投資標的</th>
+                <th scope="col">持有股數(股)</th>
+                <th scope="col">現金股利(元)</th>
+                <th scope="col">股利金額(元)</th>
+                <th scope="col">現金殖利率(%)</th>
+                <th scope="col">市值比重</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr class="">
+                <th scope="row">富邦台50</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">富邦美債20年</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">富邦美債1-3</th>
+                <td colspan="1">Larry the Bird</td>
+                <td>@twitter</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>jjisjisj</td>
+              </tr>
+              <tr>
+                <th scope="row">富邦台50</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+              </tr>
+            </tbody>
+            <tfoot class="table-warning table-group-divider">
+              <tr class="">
+                <th scope="row">總計</th>
+                <td colspan="1">Larry the Bird</td>
+                <td>@twitter</td>
+                <td colspan="1">Larry the Bird</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row border-top">
+        <div class="col">
+          <footer class="d-flex d-inline justify-content-end">
+            <p>Copyright © ?? 2022</p>
+            <p class=" text-black-50 ms-3">網站圖片來源：<a href="https://www.pexels.com/zh-tw/">pexels</a></p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script>
+      let kkk = document.getElementById('0050-台灣50');
+      // kkk.querySelector("b").textContent="哈哈哈哈哈哈";
+      console.log(kkk.querySelector("b").textContent);
+      console.log(kkk.querySelectorAll("table thead tr th")[1].textContent);
+      console.log(kkk.querySelectorAll("table tbody tr")[0].querySelectorAll("td")[0].textContent);
+      console.log(kkk.querySelectorAll("table tbody tr")[1].querySelectorAll("td")[0].textContent);
+      console.log(kkk.querySelectorAll("table tfoot tr")[0].querySelectorAll("td")[0].textContent);
+      // document.creatElement
+      // document.getElementById()
+    </script>
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- 若讀不到CDNS，需加這行讀本地端的檔案 -->
+    <!-- <script src="js/bootstrap.bundle.min.js"/> -->
+
+    <script>
+      <!-- tooltips的js -->
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+      <!-- popover的JS -->
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+    </script>
+  </body>
+</html>
