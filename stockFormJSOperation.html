@@ -347,11 +347,19 @@
     <script>
       let kkk = document.getElementById('0050-台灣50');
       // kkk.querySelector("b").textContent="哈哈哈哈哈哈";
-      console.log(kkk.querySelector("b").textContent);
-      console.log(kkk.querySelectorAll("table thead tr th")[1].textContent);
-      console.log(kkk.querySelectorAll("table tbody tr")[0].querySelectorAll("td")[0].textContent);
-      console.log(kkk.querySelectorAll("table tbody tr")[1].querySelectorAll("td")[0].textContent);
-      console.log(kkk.querySelectorAll("table tfoot tr")[0].querySelectorAll("td")[0].textContent);
+      // console.log(kkk.querySelector("b").textContent);
+      function stockSum (id){
+        let stockTable = document.getElementById(id).querySelectorAll("table")[0];
+        let stockNum = [];
+        Array.from(stockTable.tBodies[0].rows).forEach((row) => { stockNum.push(Number(row.cells[1].textContent)); });
+        return stockNum.reduce((a, b) => a + b, 0);
+      }
+      kkk.querySelectorAll("table")[0].tFoot.rows[0].cells[1].textContent = stockSum('0050-台灣50');
+      console.log(kkk.querySelectorAll("table")[0].tHead.rows[0].cells[0].textContent);
+      console.log(kkk.querySelectorAll("table")[0].tBodies[0].rows[1].cells[0].textContent);
+      console.log(kkk.querySelectorAll("table")[0].tBodies[0].rows.length);
+      console.log(kkk.querySelectorAll("table")[0].tFoot.rows[0].cells[1].textContent);
+
       // document.creatElement
       // document.getElementById()
     </script>
