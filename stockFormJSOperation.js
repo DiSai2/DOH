@@ -107,7 +107,16 @@ function tfootFormula (id) {
 tfootFormula ('0050-台灣50');
 tfootFormula ('006208-富邦台50');
 
-
+function tryFetch(url) {
+    fetch(url)
+    .then(function(response) {
+      return response.text();
+    })
+    .then(function(myJson) {
+      console.log(myJson);
+    });
+  }
+tryFetch("https://www.twse.com.tw/exchangeReport/MI_INDEX?response=csv&date=20220527&type=ALLBUT0999")
 // "https://www.twse.com.tw/exchangeReport/MI_INDEX?response=csv&date=" + dateForm[0] + "&type=ALLBUT0999";
 // https://www.twse.com.tw/exchangeReport/MI_INDEX?response=html&date=20220527&type=ALLBUT0999
 // console.log(kkk.querySelectorAll("table")[0].tHead.rows[0].cells[0].textContent);
