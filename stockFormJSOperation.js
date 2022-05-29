@@ -107,16 +107,7 @@ function tfootFormula (id) {
 tfootFormula ('0050-台灣50');
 tfootFormula ('006208-富邦台50');
 
-function tryFetch(url) {
-    fetch('http://example.com/movies.json')
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(myJson) {
-      console.log(myJson);
-    });
-  }
-tryFetch("https://disai2.github.io/")
+
 // "https://www.twse.com.tw/exchangeReport/MI_INDEX?response=csv&date=" + dateForm[0] + "&type=ALLBUT0999";
 // https://www.twse.com.tw/exchangeReport/MI_INDEX?response=html&date=20220527&type=ALLBUT0999
 // console.log(kkk.querySelectorAll("table")[0].tHead.rows[0].cells[0].textContent);
