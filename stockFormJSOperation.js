@@ -110,7 +110,7 @@ function getAnotherPage (url) {
   let dataDoc = fetch(url);
   console.log(dataDoc);
 }
-getAnotherPage("0050_others.html")
+getAnotherPage("https://disai2.github.io/0050_others.html");
 
 
   // console.log(kkk.querySelectorAll("table")[0].tHead.rows[0].cells[0].textContent);
