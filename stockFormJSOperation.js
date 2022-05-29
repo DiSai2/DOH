@@ -106,7 +106,15 @@
   }
   tfootFormula ('0050-台灣50');
   tfootFormula ('006208-富邦台50');
+<<<<<<< HEAD
 
+=======
+function getAnotherPage (url) {
+  let dataDoc = fetch(url);
+  console.log(dataDoc);
+}
+getAnotherPage("https://disai2.github.io/0050_others.html");
+>>>>>>> ea9e68c367154b861de3f87dbc592e194152bde4
 
 
   // console.log(kkk.querySelectorAll("table")[0].tHead.rows[0].cells[0].textContent);
